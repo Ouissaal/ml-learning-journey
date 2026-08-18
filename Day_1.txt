@@ -1,0 +1,127 @@
+-- What is ML?
+
+ML stands for " Machine Learning ".
+
+So... is it a machine that eats data? Hahaha.
+
+I'm kidding.
+
+"" Machine Learning is a field of Artificial Intelligence (AI) 
+that allows computers to learn patterns from data and use those 
+patterns to make predictions or decisions without being explicitly programmed 
+for every possible situation.""
+
+In simple words:
+
+> We give the computer data, it learns from that data, and then it can use what it learned to make a prediction or give an answer.
+
+
+-- Why do we need to know Machine Learning?
+
+We are living in |2026 |, and Machine Learning is already part of many technologies we use every day.
+
+For example:
+
+* Face recognition on smartphones
+* Recommendation systems on YouTube, Netflix, TikTok, etc.
+* Spam detection in email
+* Voice assistants and speech recognition
+* Fraud detection in banking
+* Search engines
+* Self-driving and driver-assistance systems
+* Personalized advertisements
+
+So even if we don't become Machine Learning engineers, 
+understanding the basics helps us understand how many modern technologies work.
+
+
+
+-- How does Machine Learning work?
+
+For this chapter, I don't want to go deep into the technical details.
+
+Let's start with a very simple example.
+
+Imagine we want a computer to recognize cats and dogs.
+
+We give the computer many pictures:
+
+```text
+Picture 1 → Cat
+Picture 2 → Dog
+Picture 3 → Cat
+Picture 4 → Dog
+...
+```
+
+The words "Cat" and "Dog" are called ||labels||.
+
+The computer analyzes the examples and learns patterns that can help distinguish a cat from a dog.
+
+Later, we give it a new picture:
+
+```text
+New picture → ???
+```
+
+The model uses what it learned from the previous examples and might predict:
+
+```text
+Prediction → Cat
+```
+
+---
+
+-- Input and Output
+
+A very simple way to think about Machine Learning is:
+
+```text
+Data → Machine Learning Model → Prediction
+```
+
+For example:
+
+```text
+Input:
+Picture of an animal
+
+        ↓
+
+Machine Learning Model
+
+        ↓
+
+Output:
+"Cat"
+```
+
+So:
+
+* Input = the data we give to the model
+* Output = the prediction or result produced by the model
+* Label = the correct answer associated with training data
+
+---
+
+-- The main idea
+
+The most important thing I want to remember from Day 1 is:
+
+> Machine Learning allows computers to learn patterns from data and use those patterns to make predictions or decisions.
+
+I don't need to understand all the mathematics or algorithms yet.
+
+For now, I just need to understand the basic idea:
+
+```text
+DATA
+  ↓
+LEARNING
+  ↓
+MODEL
+  ↓
+PREDICTION
+```
+
+And that's my starting point for learning Machine Learning in 30 days.
