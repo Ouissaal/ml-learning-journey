@@ -1,0 +1,143 @@
+-- TYPES OF MACHINE LEARNING --
+
+1/ Supervised Learning
+2/ Unsupervised Learning
+3/ Reinforcement Learning
+
+Let's start with type number 1:
+
+// Supervised Learning
+
+In this type of machine learning, we give the computer data with labels,
+and the machine learns from this data to make predictions or decisions.
+
+Do you remember something? :) 
+Yes, like the example of cats and dogs that we talked about on Day 1.
+
+For example, imagine that we give the machine many pictures of cats and dogs and tell it which pictures are cats and which ones are dogs.
+
+The machine learns from these examples.
+
+Then, when we give it a new picture, it will try to predict whether the picture belongs to the "cat" class or the "dog" class.
+
+This is called Classification.
+
+Classification means that the machine predicts a category or class.
+
+For example:
+
+Cat → Cat
+Dog → Dog
+
+But if you give it a cow, hahaha...
+
+If the model was trained only with cats and dogs, it doesn't actually know what a cow is because we never gave it examples of cows.
+It may still classify the cow as either a cat or a dog, depending on the model.
+
+That's why we need to train the model with the right data and the right classes.
+
+There is another important type of supervised learning called Regression.
+--> Regression is different from classification because the output is usually a continuous numerical value.
+
+For example, we can train a model using:
+
+House size → House price
+
+100 m² → 800,000 MAD
+150 m² → 1,100,000 MAD
+200 m² → 1,500,000 MAD
+
+The model can then learn to predict the price of a new house.
+
+So:
+
+Classification → predicts a class/category
+
+Regression → predicts a numerical value
+
+I hope this first type is clear for everyone.
+
+Let's move to the second type.
+
+// Unsupervised Learning  
+
+Here, we don't give the machine labeled data.
+We give it unlabeled data.
+This is the opposite of supervised learning.
+
+In supervised learning:
+
+We give the machine labeled data.
+In unsupervised learning:
+
+We give the machine unlabeled data.
+
+So, what does the machine do?
+
+It tries to discover patterns and structures in the data by itself.
+One common technique is called ||Clustering ||.
+
+For example, imagine that we have many data points.
+
+Some points are very close to each other, while others are far away.
+The machine can group the points that look similar into different groups.
+
+For example:
+
+Group 1 → similar points
+Group 2 → another group of similar points
+Group 3 → another group
+
+The important thing is that we didn't tell the machine what these groups are.
+
+It discovers the groups from the data.
+
+You can think of it like learning by yourself without a teacher.
+
+But remember: "learning by itself" does not mean that the machine learns exactly like a human. It means that we don't provide the correct labels for each example.
+
+Now let's go to the final type.
+
+// Reinforcement Learning
+
+Here, the machine learns through trial and error.
+
+Think about when you play a game for the first time.
+
+You probably won't win the first time.
+You make mistakes, try different actions, learn what works and what doesn't, and eventually you can become better.
+
+Reinforcement learning works with a similar idea.
+
+The system takes an action and receives feedback from the environment.
+
+Good action → Reward
+
+Bad action → Penalty
+
+The goal is to learn which actions lead to better results.
+
+For example, an AI playing a game can try different actions.
+
+If an action helps it win, it receives a positive reward.
+If an action makes it lose, it receives a negative reward.
+
+After many attempts, the system can learn a better strategy.
+
+So now you might ask:
+
+How can I know which type of machine learning I should use?
+
+It depends on the problem you are trying to solve and the type of data you have.
+
+For example:----------------------------------------------------------------------------------------
+
+If you have labeled data and want to predict a class → Supervised Learning / Classification
+
+If you have labeled data and want to predict a number → Supervised Learning / Regression
+
+If you have unlabeled data and want to discover groups or patterns → Unsupervised Learning
+
+If you want an agent to learn through actions, rewards, and penalties → Reinforcement Learning
+
+And that's Day 2! ;)
