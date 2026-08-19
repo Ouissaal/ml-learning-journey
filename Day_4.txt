@@ -1,0 +1,199 @@
+-- MACHINE LEARNING LIFECYCLE --
+
+After we know:
+
+What is Machine Learning?
+What are the types of Machine Learning?
+What is data?
+What are datasets, features, and targets?
+
+Now let's see how we actually build a Machine Learning project.
+
+Let's understand the process and the different steps a project goes through.
+
+1/ Problem Understanding and Definition
+
+Before touching the data or choosing an algorithm, we need to understand the problem.
+
+We should ask:
+
+What problem are we trying to solve?
+Why do we want to solve it?
+What do we want the model to predict?
+How will we know if the model is performing well?
+
+We also need to define the objective of the project.
+
+For example:
+
+Problem → We want to predict house prices.
+
+Objective → Build a model that can predict the price of a house based on its characteristics.
+
+So:
+
+Understand the problem → Define the objective → Determine what kind of Machine Learning problem we have
+
+This step is important because the problem we are solving will influence the type of model and algorithm we choose.
+
+2/ Data Collection and Preparation
+
+Now that we understand the problem, we need data.
+
+We collect the data from appropriate sources.
+
+Then we prepare it.
+
+This can include:
+
+Removing incorrect data
+Handling missing values
+Removing duplicates
+Cleaning the data
+Converting data into a useful format
+
+After preparing the data, we usually split it into different sets.
+
+Training Set → Used to train the model
+
+Testing Set → Used later to evaluate the model
+
+We can also have a Validation Set during development.
+
+3/ Feature Engineering
+
+Now we work with the features.
+
+Feature engineering means creating, transforming, or selecting useful features that can help the model learn better.
+
+For example, imagine that we have:
+
+Date of birth
+
+We could create:
+
+Age
+
+Instead of giving the model the date of birth directly, we can transform it into a feature that may be more useful for our problem.
+
+So feature engineering can help us give the model better information.
+
+But we have to be careful not to use information from the test set when creating features, because this can cause data leakage.
+
+4/ Model Training and Evaluation
+
+Now we can train our model.
+
+First, we choose an appropriate algorithm based on the problem.
+
+Then we give the training data to the algorithm.
+
+The model learns patterns from the training data.
+
+After training, we evaluate the model using data that was not used to train it.
+
+For example:
+
+Training Set → Train the model
+
+Testing Set → Evaluate the model
+
+We use evaluation metrics to see how well the model performs.
+
+If the results are not good enough, we may need to go back and improve:
+
+The data
+The features
+The algorithm
+The model parameters
+
+This means that Machine Learning is not always a straight line.
+
+We often go back and improve previous steps.
+
+5/ Model Deployment — "Production"
+
+If the model performs well enough, we can deploy it.
+
+Deployment means making the trained model available so that it can be used by an application, a service, users, or another system.
+
+For example, a company could deploy a model internally to predict customer churn.
+
+Or a website could use a model to recommend products to its users.
+
+So:
+
+Development → We build and test the model
+
+Production → The model is actually being used
+
+6/ Model Monitoring
+
+And we are not finished after deployment!
+
+Once the model is in production, we need to monitor it.
+
+Why?
+
+Because the real world changes.
+
+The data can change.
+User behavior can change.
+The relationship between features and the target can change.
+
+This can cause the model's performance to decrease over time.
+
+For example:
+
+Imagine that we built a model to predict house prices.
+
+The model was trained using data from previous years.
+
+But the housing market changes.
+
+Prices, interest rates, demand, and other factors can change.
+
+After some time, the model may no longer perform as well as before.
+
+So we need to monitor the model and its data.
+
+If necessary, we can:
+
+Collect new data
+Retrain the model
+Update the features
+Change the algorithm
+Replace the model
+
+So the Machine Learning Lifecycle is not really finished after deployment.
+
+It is a continuous process.
+
+Problem Definition
+↓
+Data Collection & Preparation
+↓
+Feature Engineering
+↓
+Model Training
+↓
+Model Evaluation
+↓
+Deployment
+↓
+Monitoring
+↓
+New Data / Improvements
+↓
+Retraining
+↺
+
+Sooo...
+
+This is the Machine Learning Lifecycle!
+
+We start with a problem, collect and prepare data, create useful features, train and evaluate a model, deploy it, and then continuously monitor and improve it.
+
+And now we know not only what Machine Learning is...
+
+We know how a Machine Learning project actually goes from an idea to a model used in the real world.
