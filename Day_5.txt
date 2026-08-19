@@ -1,0 +1,126 @@
+-- EXPLORATORY DATA ANALYSIS --
+
+----------- EDA ------------
+
+Exploratory Data Analysis, or EDA, is the process of exploring, analyzing, and understanding our data before building a machine learning model.
+
+The objective is to understand the data better, find patterns, detect problems, and prepare the data for the next steps.
+
+You can think about it like going to a doctor.
+
+Before giving you a treatment, the doctor first examines you and makes a diagnosis.
+
+In the same way, before building our machine learning model, we should examine our data.
+
+We can use statistics and data visualizations to understand the data better.
+
+1/ Summary Statistics
+
+First, we can calculate some basic statistics to get an overview of the data.
+
+For example, if we are working with house prices, we can look at:
+
+Average price
+Minimum price
+Maximum price
+Range
+Median
+Standard deviation
+
+This gives us a quick idea about how the data is distributed.
+
+For example:
+
+Average house price → 1,000,000 MAD
+
+Minimum → 400,000 MAD
+
+Maximum → 2,500,000 MAD
+
+Now we have a better idea about our data.
+
+2/ Data Visualization
+
+Numbers are useful, but sometimes a graph makes the data much easier to understand.
+
+We can use different types of visualizations, such as:
+
+Bar charts
+Histograms
+Scatter plots
+Box plots
+Line charts
+
+For example, we could create a scatter plot showing:
+
+House size → House price
+
+We may notice that larger houses tend to have higher prices.
+
+3/ Correlation Analysis
+
+Correlation helps us measure the strength and direction of a relationship between numerical variables.
+
+For example:
+
+House size ↔ House price
+
+If larger houses generally have higher prices, these two variables may have a positive correlation.
+
+But remember:
+
+Correlation does NOT necessarily mean causation.
+
+Just because two variables are correlated does not mean that one causes the other.
+
+4/ Anomaly Detection
+
+During EDA, we can also look for unusual or unexpected observations.
+
+These are often called anomalies or outliers.
+
+For example:
+
+A very large house with an unusually low price.
+
+This could be an error in the data.
+
+But it could also be a real situation.
+
+Maybe the house needs major repairs, is in a different location, or there is another reason for the unusual price.
+
+So we should NOT automatically delete anomalies.
+
+First, we need to investigate them and understand why they exist.
+
+Then we can decide whether to:
+
+Keep the data
+Correct the data
+Transform it
+Remove it
+
+So, this is EDA!
+
+Exploratory Data Analysis is an important step in a Machine Learning project because it helps us understand our data before building the model.
+
+It can help us discover:
+
+Patterns
+Relationships
+Missing values
+Outliers
+Errors
+Unexpected data
+
+And it helps us decide what we should do next.
+
+So before saying:
+
+"Let's train the model!"
+
+We should first ask:
+
+"Do we actually understand our data?"
+
+EDA helps us answer that question.
