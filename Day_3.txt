@@ -1,0 +1,153 @@
+-- DATA ???
+
+Data is a collection of information that we use
+to train and evaluate our machine learning models.
+
+Depending on the domain, data can be:
+------------------------------------
+Images
+Videos
+Text
+Audio
+Numbers
+Tables
+-------------------------------
+And much more.
+
+So basically:
+
+""" No data → No information to learn from → No machine learning  """
+
+A machine learning model learns patterns from data.
+
+// DATASET
+
+So, what is a dataset?
+
+A dataset is a collection of data that we use for a specific machine learning task.
+
+It can be stored in different formats, 
+such as CSV files, Excel files, databases, or collections of images, depending on the project.
+
+For example, imagine we want to build a model that predicts whether a person is a cat or a dog.
+
+Our dataset could contain many images of cats and dogs.
+
+// FEATURES AND TARGETS  // 
+
+Now we have to understand two important concepts:
+
+Features
+Target / Label
+
+Features are the pieces of information that we use as ||inputs|| to make a "prediction".
+
+For example, if we are predicting the price of a house, our features could be:
+
+Size
+Number of bedrooms
+Location
+Number of bathrooms
+
+The target is what we want our model to predict.
+
+For example:
+
+Features → House size, bedrooms, location
+
+Target → House price
+
+In classification, the target can also be called a label.
+
+For example:
+
+Features → Image of an animal
+
+Target / Label → Cat or Dog
+
+So:
+
+Features → Information used to make the prediction
+
+Target / Label → The result we want the model to predict
+
+TRAINING AND TESTING DATA
+
+Now, to teach our model, we usually split our dataset into different parts.
+
+The two main parts are:
+
+1. Training Set
+
+This is the data we use to train the model.
+
+The model looks at this data and learns patterns from it.
+
+2. Testing Set
+
+This data is kept separate from the training data.
+
+After training, we use the testing set to evaluate 
+how well the model performs on data it hasn't seen before.
+
+For example:
+
+Training Set → Teach the model
+
+Testing Set → Test the model
+
+Sometimes, we also use a third part:
+
+3. Validation Set
+
+The validation set can be used during development 
+to help choose or tune the model before the final evaluation on the testing set.
+
+And of course...
+
+DATA QUALITY AND QUANTITY MATTER!
+
+Having a huge amount of data doesn't automatically mean that we will have a good model.
+
+The quality of the data is extremely important.
+
+Bad data → Bad learning → Bad predictions
+
+For example, if our dataset contains many incorrect labels, missing values, duplicates, or irrelevant information, the model can learn the wrong patterns.
+
+So we need to think about:
+
+Data quality
+Data quantity
+Data relevance
+Data diversity
+
+WHERE CAN WE FIND DATA?
+
+Now, when are we going to find the data?
+
+There are many possibilities.
+
+You can search online for datasets related to your problem.
+
+For example, you can search:
+
+"cat dog dataset"
+
+"house price dataset"
+
+"sentiment analysis dataset"
+
+There are also public dataset platforms and repositories where researchers and developers share datasets.
+For sensitive or private data, things are different.
+We cannot simply take people's private information and use it for machine learning.
+
+Depending on the project and the type of data, organizations may need proper permission, legal authorization, consent, anonymization, or data obtained from an authorized provider.
+
+So always remember:
+
+Good data → Better learning
+
+And better data preparation can be just as important as choosing the machine learning algorithm.
+
+That's Day 3!
