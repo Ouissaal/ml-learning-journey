@@ -1,0 +1,124 @@
+-- LINEAR REGRESSION --
+
+Linear Regression is a Machine Learning algorithm used for regression problems.
+
+Regression means that we want to predict a numerical value.
+
+For example:
+
+A recruiter wants to estimate the salary of a candidate based on their experience.
+We have some previous data:
+
+1 year of experience → 30k
+2 years → 35k
+3 years → 45k
+5 years → 60k
+7 years → 75k
+
+The Machine Learning algorithm looks at these examples and tries to find a relationship between the features and the target.
+
+In this example:
+
+Feature → Years of experience
+
+Target → Salary
+
+The model tries to find the best line that represents the relationship between them.
+
+The basic formula for Simple Linear Regression is:
+
+y = ax + b
+
+In Machine Learning, we often write it as:
+
+ŷ = b₀ + b₁x
+
+Where:
+
+x → Independent variable / Feature
+
+y → Actual dependent variable / Target
+
+ŷ → Predicted target
+
+b₀ → Intercept
+
+b₁ → Coefficient / Slope
+
+For example, if we use:
+
+Experience → Salary
+
+The model could learn a relationship such as:
+
+Salary = 8 × Experience + 25
+
+This would mean that the model estimates the salary based on the number of years of experience.
+
+Of course, real-world salaries are much more complicated than this because many other factors can influence salary.
+
+For example:
+
+Experience
+Education
+Skills
+Location
+Industry
+Company size
+
+That's where Multiple Linear Regression comes in.
+
+SIMPLE LINEAR REGRESSION
+
+Simple Linear Regression uses one feature to predict the target.
+
+Example:
+
+Experience → Salary
+
+Formula:
+
+ŷ = b₀ + b₁x
+
+MULTIPLE LINEAR REGRESSION
+
+Multiple Linear Regression uses multiple features to predict the target.
+
+For example:
+
+Experience + Education + Skills + Location → Salary
+
+The formula becomes:
+
+ŷ = b₀ + b₁x₁ + b₂x₂ + b₃x₃ + ...
+
+Each feature has its own coefficient.
+
+So:
+
+x₁ → Experience
+
+x₂ → Education
+
+x₃ → Skills
+
+And so on.
+
+The model learns the coefficients from the training data.
+
+IMPORTANT:
+
+Regression is NOT an algorithm.
+
+Regression is a type of Machine Learning problem.
+
+Linear Regression is an algorithm that can be used to solve a regression problem.
+
+So:
+
+Regression → Problem type
+
+Linear Regression → Machine Learning algorithm
+
+And that's Linear Regression!
+We give the algorithm data, it learns the relationship between the features and the target, and then it can use that learned relationship to make predictions on new data.
