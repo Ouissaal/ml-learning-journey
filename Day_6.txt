@@ -1,0 +1,106 @@
+-- ALGORITHM --
+
+What is an Algorithm?
+
+An algorithm is a set of instructions or steps used to solve a problem or perform a specific task.
+
+In simple programming, we can think about it like this:
+
+Input → Algorithm → Output
+
+For example:
+
+Input → 2 + 3
+Algorithm → Addition
+Output → 5
+
+So the algorithm tells the computer what steps to follow.
+--------------
+But Machine Learning is a little different.
+
+In traditional programming:
+
+Data + Rules → Output
+
+The programmer creates the rules.
+
+In Machine Learning:
+
+Data + Expected Results → Learning Algorithm → Model
+
+The learning algorithm uses the examples to find patterns and create a model.
+
+For example, imagine that we want to predict house prices.
+
+We give the algorithm data such as:
+
+House size → 100 m²
+Bedrooms → 2
+Price → 800,000 MAD
+
+House size → 150 m²
+Bedrooms → 3
+Price → 1,100,000 MAD
+
+House size → 200 m²
+Bedrooms → 4
+Price → 1,500,000 MAD
+
+The learning algorithm looks at these examples and tries to find patterns.
+
+After training, we have a model.
+
+Then we can give the model a new house:
+
+Size → 170 m²
+Bedrooms → 3
+
+And the model can predict an estimated price.
+
+So the important difference is:
+
+Traditional Programming:
+
+Input + Rules → Output
+
+Machine Learning:
+
+Input + Examples → Learning Algorithm → Model → Predictions
+
+
+Learning Algorithm → The method used to learn patterns
+
+Model → The result of that learning
+
+Data → The examples from which the model learns
+
+So:
+
+Data + Learning Algorithm → Trained Model
+
+And then:
+
+New Data + Trained Model → Prediction
+
+This is why algorithms are so important in Machine Learning.
+
+They provide the methods that allow the model to learn patterns from data and make predictions.
+
+Some examples of Machine Learning algorithms are:
+
+Linear Regression
+Logistic Regression
+Decision Trees
+Random Forest
+K-Nearest Neighbors
+Support Vector Machines
+K-Means
+
+And we will learn about them later.
+
+So, in simple words:
+
+An algorithm is a set of instructions used to solve a problem.
+
+In Machine Learning, a learning algorithm is a method that allows
+a model to learn patterns from data.
