@@ -1,0 +1,156 @@
+# ----- LOGISTIC REGRESSION -----
+
+## What is Logistic Regression?
+
+Logistic Regression is a **supervised machine learning algorithm** used mainly for **classification problems**.
+
+Despite its name, it is called "regression" because it models the relationship between the input variables and the probability of belonging to a class.
+
+For example:
+
+* `0` → The person does not buy
+* `1` → The person buys
+
+---
+
+## Example: Age → Buying a Product
+
+Imagine that we have data about people's ages and whether they bought a product.
+
+| Age | Bought |
+| --- | ------ |
+| 18  | 0      |
+| 20  | 0      |
+| 25  | 0      |
+| 30  | 1      |
+| 35  | 1      |
+| 40  | 1      |
+| 50  | 1      |
+
+We can observe that, in this example, older people are more likely to buy the product.
+
+However, Logistic Regression does **not simply say**:
+
+> "Older than 30 = buy"
+
+Instead, it calculates a **probability**.
+
+For example:
+
+```text
+Age 20 → probability of buying = 5%
+Age 30 → probability of buying = 70%
+Age 40 → probability of buying = 99%
+```
+
+The model then uses a threshold, commonly `0.5`, to convert the probability into a class:
+
+```text
+probability < 0.5 → class 0
+probability >= 0.5 → class 1
+```
+
+---
+
+## The Mathematics
+
+In Linear Regression, we have:
+
+```text
+y = b0 + b1*x
+```
+
+Logistic Regression starts with a similar linear combination:
+
+```text
+z = b0 + b1*x
+```
+
+But we cannot use `z` directly as a probability because `z` can be smaller than 0 or greater than 1.
+
+Therefore, we use the **sigmoid function**:
+
+```text
+p = 1 / (1 + e^(-z))
+```
+
+where:
+
+```text
+z = b0 + b1*x
+```
+
+So:
+
+```text
+p = 1 / (1 + e^(-(b0 + b1*x)))
+```
+
+The sigmoid function transforms any number into a value between `0` and `1`.
+
+This value can be interpreted as the probability of belonging to class `1`.
+
+---
+
+## Log-Odds / Logit
+
+The sigmoid equation can also be written as:
+
+```text
+ln(p / (1-p)) = b0 + b1*x
+```
+
+The left side is called the **logit** or **log-odds**.
+
+This equation shows that Logistic Regression models the **log-odds** as a linear combination of the input variables.
+
+---
+
+## What Does the Graph Look Like?
+
+Linear Regression tries to find a **best-fit straight line**.
+
+Logistic Regression is different.
+
+It produces an **S-shaped curve** because of the sigmoid function.
+
+```text
+Probability
+1 |                         ______
+  |                      __/
+  |                   __/
+0.5|-----------------/
+  |              __/
+  |           __/
+0 |__________/
+  +-----------------------------> Age
+```
+
+The curve represents the probability of belonging to class `1`.
+
+---
+
+
+## Multiple Variables
+
+With several input variables, the equation becomes:
+
+```text
+z = b0 + b1*x1 + b2*x2 + ... + bn*xn
+```
+
+and:
+
+```text
+p = 1 / (1 + e^(-z))
+```
+
+For example:
+
+```text
+Age
+Salary
+Years of experience
+```
+
+could all be used to predict whether someone buys a product.
