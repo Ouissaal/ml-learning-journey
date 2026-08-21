@@ -1,0 +1,42 @@
+---- Support Vector Machine (SVM) --------
+
+
+## SUPPORT VECTOR MACHINE (SVM)
+
+SVM is a supervised machine learning algorithm.
+
+It can be used for both:
+
+* Classification
+* Regression
+
+The main objectif is to find the best optimal line to separate different classes.
+
+For example:
+
+We have some red points and green points, and we want to separate them.
+
+Maybe we can find 3 different lines that can separate them.
+
+But we don't want just any line that works with our current data.
+
+We want to find the best line that can also work well with new data in the future.
+
+And here we understand the role of SVM .
+
+The objectif of SVM is to find the best decision boundary.
+
+In 2D, we can see this boundary as a line.
+
+More generally, SVM calls it a hyperplane.
+
+SVM looks at the points that are closest to this boundary.
+
+These important points are called Support Vectors.
+
+So:
+
+SVM → Find the best decision boundary → Based on Support Vectors
+
+The idea is to create a boundary with the largest possible margin between the different classes.
+
