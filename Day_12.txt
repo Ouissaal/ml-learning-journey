@@ -1,0 +1,84 @@
+      --- NAIVE BAYES ---
+
+is a supervised machine learning algorithm
+
+it is based on the concept of probability
+
+it applies mathematics based on the Bayes theorem
+
+we call it Naive Bayes because it makes a "naive" assumption:
+
+it assumes that the features are independent from each other
+
+for example:
+
+we have a fruit classifier
+
+if we see something that is:
+
+* red
+* round
+
+the model may predict Apple
+
+but it can also be a Tomato hhhhh
+
+so Naive Bayes doesn't simply say:
+
+"red + round = apple"
+
+instead, it calculates the probability of each class and chooses the class with the highest probability.
+
+The main rule is:
+
+P(H | E) = P(E | H) × P(H) / P(E)
+
+where:
+
+* P(H | E) = probability of the hypothesis H given the evidence E
+* P(E | H) = probability of the evidence E given the hypothesis H
+* P(H) = probability of the hypothesis
+* P(E) = probability of the evidence
+
+---
+
+## The basic steps
+
+### 1/ We prepare the data
+
+Instead of keeping repetitive rows, we can count how many times each class or feature appears.
+
+For example:
+
+Apples: 255
+
+instead of writing 255 repetitive rows.
+
+### 2/ We calculate the probabilities
+
+We create probability tables and calculate things like:
+
+* probability of a class
+* probability of each feature given a class
+
+For example:
+
+P(Apple)
+P(Red | Apple)
+P(Round | Apple)
+
+### 3/ Apply Naive Bayes
+
+For a new data point, we calculate the probability for each possible class.
+
+For example:
+
+P(Apple | Red, Round)
+
+P(Tomato | Red, Round)
+
+Then the algorithm chooses the class with the highest probability.
+
+So basically:
+
+features → probabilities → compare classes → prediction
