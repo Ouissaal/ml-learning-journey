@@ -1,0 +1,59 @@
+--- K-NEAREST NEIGHBORS (KNN) ---
+
+
+is a supervised machine learning algorithm.
+
+we mainly use it for classification.
+
+it can also be used for regression, but classification is more common.
+
+the main idea is very simple:
+
+when we have a new data point, KNN looks at the points that are closest to it and uses them to decide its class.
+
+we choose a number called K.
+
+K = the number of neighbors we want to look at.
+
+for example:
+
+we have some 🍎 apples and 🍌 bananas in a space.
+
+then we receive a new point ❓.
+
+KNN asks:
+
+"who are the closest points to this new point?"
+
+if we choose K = 3, we look at the 3 nearest neighbors.
+
+for example:
+
+🍎 🍎 🍌
+
+we count the classes:
+
+🍎 → 2
+🍌 → 1
+
+so 🍎 wins.
+
+therefore, the new point belongs to the Apple class.
+
+this algorithm contains 4 main steps:
+
+1/ choose K, the number of neighbors we want to consider.
+
+2/ calculate the distance between the new point and the other points to find the **K nearest neighbors**.
+
+3/ count how many neighbors belong to each class.
+
+4/ assign the new point to the class with the majority of neighbors.
+
+so basically:
+
+NEW POINT → FIND K NEAREST NEIGHBORS → COUNT THE CLASSES → MAJORITY WINS 🏆
+
+KNN is basically:
+
+"hia chkon jar chkon" hhh 😂
