@@ -1,0 +1,93 @@
+ --- DECISION TREES ---
+
+is a supervised machine learning algorithm
+
+we use it for both:
+
+* classification
+* regression
+
+a Decision Tree makes decisions based on conditions of the features.
+
+the idea is very simple:
+
+we ask a question
+→ check the answer
+→ go to the next question
+→ continue until we get a final decision
+
+for example:
+
+if you are 18 or older → you are a major
+
+else → you are a minor
+
+
+
+the tree contains different parts:
+
+the circles are called nodes
+
+each node contains a condition or question
+
+the lines coming from a node are called branches
+
+the final result is called a leaf node
+
+the tree starts with the first condition, called the root node
+
+then, depending on the result, we follow one of the branches
+
+---
+
+real example:
+
+imagine you want to start working at X company.
+
+you can ask:
+
+is the salary good?
+
+→ yes → ask about the working hours
+
+→ no → maybe reject the job
+
+then:
+
+are the working hours good?
+
+→ yes → accept
+
+→ no → reject
+
+so the tree is basically:
+
+question → answer → next question → final decision
+
+---
+
+but how does the algorithm know which question should come first?
+
+it uses calculations called:
+
+Information Gain
+
+Information Gain is based on a concept called:
+
+Entropy
+
+Entropy measures how mixed or uncertain the data is.
+
+the basic formula is:
+
+E(S) = - Σ pi log2(pi)
+
+where:
+
+pi = probability of each class
+
+the goal is to choose the conditions that give the best split and reduce the uncertainty.
+
+so basically:
+
+data → choose the best question → split the data → repeat → final prediction
